@@ -1,0 +1,24 @@
+======================================================================
+QUESTION : Anthropic was founded by former OpenAI employees
+======================================================================
+
+[1] SEARCH QUERY
+Anthropic founded former OpenAI employees
+
+[2] EVIDENCE (1608 chars)
+[1] Anthropic
+    Anthropic, PBC is an American artificial intelligence (AI) public benefit corporation headquartered in San Francisco, California, founded with the goal of promoting AI safety. Its flagship product is Claude, a series of proprietary large language models (LLMs). Anthropic was founded in 2021 by former members of OpenAI, including siblings Daniela Amodei and Dario Amodei, who are president and CEO, respectively. The company is privately held but is reported to make an initial public offering in fall 2026. It had an estimated valuation of $965 billion in May 2026, making it the most valuable pure-play AI company in the world.
+    source: https://en.wikipedia.org/wiki/Anthropic
+
+[3] ASSESSMENT
+- The evidence clearly states that Anthropic was founded by former members of OpenAI, specifically mentioning the Amodei siblings.
+- It provides context about the founding of Anthropic and its goals related to AI safety, linking it directly to OpenAI.
+- The information is sufficient to confirm the relationship between the founders of Anthropic and their previous employment at OpenAI.
+
+ENOUGH
+
+======================================================================
+VERDICT : ENOUGH
+ROUTE   : WRITE_ANSWER
+======================================================================
+Yes, Anthropic was founded by former OpenAI employees. According to the evidence, "Anthropic was founded in 2021 by former members of OpenAI, including siblings Daniela Amodei and Dario Amodei" (source: https://en.wikipedia.org/wiki/Anthropic). This confirms that the founders of Anthropic had previously worked at OpenAI.
