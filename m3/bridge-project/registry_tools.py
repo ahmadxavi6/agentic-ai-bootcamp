@@ -189,11 +189,12 @@ def gleif_lookup(legal_name: str) -> str:
     if not name:
         return NO_RECORDS
 
-    # 1. The square brackets. They are NOT legal in a URL query as-is, and
-    #    GLEIF answers 200 to the raw version anyway - with unfiltered records.
-    #    A request that succeeds with a silently ignored filter is nastier than
-    #    one that fails, so they have to be percent-encoded (%5B / %5D).
-    #    requests.params does that for us; urlencode() on its own does not.
+    # 1. The square brackets have to reach GLEIF percent-encoded (%5B / %5D).
+    #    Sent raw, the request still returns 200 - with the filter silently
+    #    ignored and unfiltered records in the body, which is what makes this
+    #    one nasty. Passing them through requests' `params` encodes them;
+    #    urllib.parse.urlencode() would too. What does NOT work is building
+    #    the query string by hand with an f-string.
     try:
         r = requests.get(
             "https://api.gleif.org/api/v1/lei-records",
